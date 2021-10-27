@@ -1,5 +1,5 @@
 # Site settings
-title: Another Blog
+title: LOUIS MOZART KAMDEM
 url: "http://laobubu.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
 baseurl: " " # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
 #timezone: Asia/Chongqing
@@ -10,7 +10,7 @@ description: >
 email:  louismozart.teyou@aims.ac.rw
 author:  Louis Mozart Kamdem Teyou
 avatar: "https://github.com/Louis-Mozart/Louis-Mozart.github.io/blob/gh-pages/photos/moz.jpg?raw=true"
-profile: One sentence introducing yourself.
+profile:  YOU ARE WELCOME TO MY SITE .
 #twitter_username: twitter_username
 #github_username:  github_username
 profile_links:
@@ -29,8 +29,8 @@ excerpt_separator: <!--more-->
 header:
   links:             # Links on the header. Link to in-site page with a slash as prefix
     About: /about/
-    Category: /category/
-    Donate: https://laobubu.net/donate.html
+   # Category: /category/
+   # Donate: https://laobubu.net/donate.html
 
 permalink: /archivers/:title
 plugins:
