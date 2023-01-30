@@ -1,27 +1,4 @@
-%{
-  Title: 1D Finite Element Method (FEM) Tutorial
-  Author: Cheuk Lau
-  Date: 2/8/2014
-  Description: This is the master file of the 1D FEM tutorial. It controls
-  the flow of the program. Please read the README.pdf for more information
-  on each of the required files!
-  Files required: (1) master.m
-                  (2) a_def.m
-                  (3) act_quad.m
-                  (4) compute_dof_pos.m
-                  (5) compute_RHS_global.m
-                  (6) compute_RHS_local.m
-                  (7) compute_stiff_global.m
-                  (8) compute_stiff_local.m
-                  (9) eval_der_shape.m
-                  (10) eval_shape.m
-                  (11) f_def.m
-                  (12) loc_to_glob.m
-                  (13) ref_quad.m
-  Reference: (1) http://mathworld.wolfram.com/FiniteElementMethod.html
-  Input parameters: Run program directly from master.m
-  Output: Plot of analytical and computed solutions.  
-%}
+
 
 
 %% User input
