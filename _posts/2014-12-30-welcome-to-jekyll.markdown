@@ -1,80 +1,79 @@
 ---
 layout: post
-title:  "Welcome to my webpage haha"
+title:  "Welcome to My Research Page"
 date:   2024-12-05 17:00:13
-categories: jekyll update
-permalink: /archivers/hello
+categories: research projects
+permalink: /archivers/research
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Look at the source for this post to get an idea about how it works.
+Welcome to my webpage! Here, you can learn about my research activities, projects, and contributions. I’m pursuing a PhD with a focus on **Class Expression Learning with Multiple Representations**, and I’ve been actively working on cutting-edge topics like knowledge graph embeddings, ontology-based retrieval, and caching algorithms.
 
 <!--more-->
 
-GitHub Flavored Markdown is supported.
+### Current Projects
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
+#### 2. **Instance Retrieval with Embedding-Based Reasoners**
+A project leveraging embeddings to optimize retrieval in OWL ontologies. It integrates subsumption-based caching and Jaccard similarity calculations to improve efficiency.
 
-And $$\mathcal{ Mathematics }$$ is supported!
+#### 1. **Embedding-in-Function-Spaces**
+This is my latest repository, where I explore embedding techniques in function spaces to enhance reasoning and retrieval capabilities.  
+GitHub Repository: [Embedding-in-function-spaces](https://github.com/Louis-Mozart/Embedding-in-function-spaces)
 
-Use `$$` to wrap your formulas. For example, `$$ e^{i\pi} + 1 = 0 $$` displays $$  e^{i\pi} + 1 = 0  $$
 
-Multi-line formulas are supported too.
+#### 3. **Knowledge Graph Embedding Models**
+I have developed two knowledge graph embedding models, with both models accepted in academic venues. These models provide a foundation for ontology representation learning.
+
+---
+
+### Research Activities
+
+- **Ontology Instance Retrieval**: Developing algorithms for efficient instance retrieval using reasoning and embeddings.
+- **Subsumption-Based Caching**: Implementing caching strategies for ontology instance retrieval, focusing on LIFO purging and similarity-based assessments.
+- **Class Expression Learning**: Exploring methods for representing and learning complex OWL class expressions with multiple representations.
+- **Mutagenesis Data Analysis**: Integrating Web Ontology Language (OWL) constructs with biological data for improved inference.
+
+---
+
+### Collaboration and Updates
+
+I’m actively collaborating on **WP4** of a funded project. A recent deliverable included providing updates on **PCDP** changes. If you're interested in updates, feel free to reach out.
+
+---
+
+### Links
+
+- [My GitHub Profile](https://github.com/Louis-Mozart)  
+- [Embedding-in-function-spaces](https://github.com/Louis-Mozart/Embedding-in-function-spaces)  
+- [Lemur-dn Repository](https://github.com/Louis-Mozart/Lemur-dn/lemur-dn.github.io)
+
+---
+
+### Contact Me
+
+Feel free to connect with me for collaboration, feedback, or research discussions.  
+You can reach out via GitHub or through this webpage.
+
+---
+
+### Fun with Markdown and Math!
+
+Here’s a quick example of some cool math supported on this site:
+
+$$
+e^{i\pi} + 1 = 0
+$$
+
+And a multi-line formula:
 
 $$
 \begin{aligned}
 & J(w, b) = \frac{1}{m} \sum_{i=1}^{m}L(\hat{y}^{(i)}, y^{(i)})
-+ \frac{\lambda}{2m} \sum_{l=1}^{L}{||w||}^2_F\\\\
++ \frac{\lambda}{2m} \sum_{l=1}^{L}{||w||}^2_F \\\\
 & {||w||}^2_F = \sum_{i = 1}^{n[l]}\sum_{j = 1}^{n[l-1]}(w_{ij})^2
 \end{aligned}
 $$
 
+---
 
-## EasyBook Advanced Functions ##
+Check out [Jekyll docs](http://jekyllrb.com) for more on how this website was built. Thank you for visiting!
 
-You are using [EasyBook][github-easybook] the template from [laobubu.net](http://laobubu.net). Therefore some features are supported now:
-
-* **Pagination** is enabled.
-* **Disqus** or **多说** is ready.
-* **TOC** for posts is enabled.
-* **Profile** including your links and avatar on the sidebar.
-* *And more...*
-
-> **Tips:** You can disable Disqus or 多说 on posts/pages by adding `nocomments: true` into [YAML Front Matter][frontmatter].
-
-EasyBook uses upaiyun CDN to make everyone lncluding Chinese visitors feel speedy. You can find it in `_includes/footer.html` and change it to your favorite CDN like Google CDN.
-
-## Support me by... ##
-
-### Add a link ###
-
-EasyBook does not make the footer heavy; the link to theme could be on `about.md`:
-
-> This website is using [laobubu](http://laobubu.net)'s theme: [EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)
-
-### Donate (PayPal or 支付宝) ###
-
-That's the best :smile: 
-
-Please visit [http://laobubu.net/donate.html](http://laobubu.net/donate.html)
-
-### Star and Fork on GitHub (free) ###
-
-Not going to donate? That's okay. You can also send out your precious star [on GitHub][github-easybook].
-
-## And Here We Go ##
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
-[frontmatter]: http://jekyllrb.com/docs/frontmatter/
-[github-easybook]: https://github.com/laobubu/jekyll-theme-EasyBook
