@@ -17,9 +17,9 @@ To see all my publications, please refer to my [My google scholar profile](https
 
 #### 1. **Implementation of Caching Mechanisms for Fast Instance Retrieval**  
 Efficient instance retrieval is vital for ontology-based reasoning systems. My approach introduces a **semantics-aware caching strategy** to accelerate concept learning:  
-- The cache $\mathcal{A}$ functions as a **subsumption-aware map**, linking concepts to a set of instances.  
-- Given a concept $C$, $\mathcal{A}$ identifies the most specific concept $D$ in its storage such that $C \sqsubseteq D$ (where $D$ subsumes $C$).  
-- This approach minimizes redundant evaluations by testing $C$ only against the instances of $D$.  
+- The cache $$\mathcal{A}$$ functions as a **subsumption-aware map**, linking concepts to a set of instances.  
+- Given a concept $$C$$, $$\mathcal{A}$$ identifies the most specific concept $$D$$ in its storage such that $$C \sqsubseteq D$$ (where $$D$$ subsumes $$C$$).  
+- This approach minimizes redundant evaluations by testing $C$ only against the instances of $$D$$.  
 
 #### 2. **Instance Retrieval with Embedding-Based Reasoners on incomplete Knowledge bases**  
 This project focuses on leveraging **embeddings** to optimize instance retrieval in OWL ontologies. Key aspects include:  
@@ -31,11 +31,10 @@ This project focuses on leveraging **embeddings** to optimize instance retrieval
 
 |   | Expression             | Type                     | Jaccard Similarity | F1  | Runtime Benefits      | Runtime EBR        | Symbolic Retrieval                                                                                                                                               | EBR Retrieval                                                                                                                                         |
 |---|------------------------|--------------------------|--------------------|-----|-----------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 | female ⊓ male          | OWLObjectIntersectionOf   | 1.0                | 1.0 | 0.054    | 0.003    | set()                                                                                                                                                            | set()                                                                                                                                                            |
-| 1 | ∃ hasChild.female       | OWLObjectSomeValuesFrom   | 1.0                | 1.0 | -0.001 | 0.001  | {'markus'}                                                                                                                             | {'markus'}                                                                                                                             |
-| 2 | person ⊔ (¬person)      | OWLObjectUnionOf         | 1.0                | 1.0 | -0.003  | 0.003   | {'martin', 'stefan', 'markus', 'anna', 'michelle', 'heinz'} | {'martin', 'stefan', 'markus', 'anna', 'michelle', 'heinz'} |
-| 3 | person ⊓ person         | OWLObjectIntersectionOf  | 1.0                | 1.0 | -0.002   | 0.002    | {'martin', 'stefan', 'markus', 'anna', 'michelle', 'heinz'} | {'martin', 'stefan', 'markus', 'anna', 'michelle', 'heinz'} |
-| 4 | person ⊔ person         | OWLObjectUnionOf         | 1.0                | 1.0 | -0.002  | 0.002   | {'martin', 'stefan', 'markus', 'anna', 'michelle', 'heinz'} | {'martin', 'stefan', 'anna', 'markus', 'michelle', 'heinz'} |
+| 0 | female ⊓ male          | IntersectionOf   | 1.0                | 1.0 | 0.054    | 0.003    | set()                                                                                                                                                            | set()                                                                                                                                                            |
+| 1 | ∃ hasChild.female       | SomeValuesFrom   | 1.0                | 1.0 | -0.001 | 0.001  | {'markus'}                                                                                                                             | {'markus'}                                                                                                                             |
+| 3 | person ⊓ male         | IntersectionOf  | 1.0                | 1.0 | -0.002   | 0.002    | {'martin', 'stefan', 'markus'} | {'martin', 'stefan', 'markus'} |
+| 4 | male ⊔ female         | UnionOf         | 1.0                | 1.0 | -0.002  | 0.002   | {'martin', 'stefan', 'anna', 'markus', 'michelle', 'heinz'} | {'martin', 'stefan', 'anna', 'markus', 'michelle', 'heinz'} |
 
 ---
 
