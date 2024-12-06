@@ -6,6 +6,11 @@ categories: research projects
 permalink: /louis_mozart/research
 ---
 
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
 Welcome to my webpage! Here, you can learn about my research activities, projects, and contributions. I’m pursuing a PhD with a focus on **Class Expression Learning with Multiple Representations**, and I’ve been actively working on cutting-edge topics like knowledge graph embeddings, ontology-based retrieval, and caching algorithms.
 
 <!--more-->
@@ -17,9 +22,9 @@ To see all my publications, please refer to my [My google scholar profile](https
 
 #### 1. **Implementation of Caching Mechanisms for Fast Instance Retrieval**  
 Efficient instance retrieval is vital for ontology-based reasoning systems. My approach introduces a **semantics-aware caching strategy** to accelerate concept learning:  
-- The cache `$$ \mathcal{A} $$` functions as a **subsumption-aware map**, linking concepts to a set of instances.  
-- Given a concept `$$ C $$`, `$$ \mathcal{A} $$` identifies the most specific concept `$$ D $$` in its storage such that `$$ C \sqsubseteq D $$` (where $$ D $$ subsumes $C$).  
-- This approach minimizes redundant evaluations by testing $C$ only against the instances of $D$.  
+- The cache $$ \mathcal{A} $$ functions as a **subsumption-aware map**, linking concepts to a set of instances.  
+- Given a concept $$ C $$, $$ \mathcal{A} $$ identifies the most specific concept $$ D $$ in its storage such that $$ C \sqsubseteq D $$ (where $$ D $$ subsumes $$ C $$).  
+- This approach minimizes redundant evaluations by testing $$ C $$ only against the instances of $$ D $$.  
 
 #### 2. **Instance Retrieval with Embedding-Based Reasoners on incomplete Knowledge bases**  
 This project focuses on leveraging **embeddings** to optimize instance retrieval in OWL ontologies. Key aspects include:  
