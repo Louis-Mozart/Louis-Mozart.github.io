@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to My Research Page"
 date:   2024-12-05 17:00:13
 categories: research projects
-permalink: /archivers/research
+permalink: /louis_mozart/research
 ---
 
 Welcome to my webpage! Here, you can learn about my research activities, projects, and contributions. I’m pursuing a PhD with a focus on **Class Expression Learning with Multiple Representations**, and I’ve been actively working on cutting-edge topics like knowledge graph embeddings, ontology-based retrieval, and caching algorithms.
