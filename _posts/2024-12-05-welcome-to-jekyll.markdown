@@ -32,10 +32,10 @@ This project focuses on leveraging **embeddings** to optimize instance retrieval
 |   | Expression             | Type                     | Jaccard Similarity | F1  | Runtime Benefits      | Runtime EBR        | Symbolic Retrieval                                                                                                                                               | EBR Retrieval                                                                                                                                         |
 |---|------------------------|--------------------------|--------------------|-----|-----------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0 | female ⊓ male          | OWLObjectIntersectionOf   | 1.0                | 1.0 | 0.054    | 0.003    | set()                                                                                                                                                            | set()                                                                                                                                                            |
-| 1 | ∃ hasChild.female       | OWLObjectSomeValuesFrom   | 1.0                | 1.0 | -0.001 | 0.001  | {'http://example.com/father#markus'}                                                                                                                             | {'http://example.com/father#markus'}                                                                                                                             |
-| 2 | person ⊔ (¬person)      | OWLObjectUnionOf         | 1.0                | 1.0 | -0.003  | 0.003   | {'http://example.com/father#martin', 'http://example.com/father#stefan', 'http://example.com/father#markus', 'http://example.com/father#anna', 'http://example.com/father#michelle', 'http://example.com/father#heinz'} | {'http://example.com/father#martin', 'http://example.com/father#stefan', 'http://example.com/father#markus', 'http://example.com/father#anna', 'http://example.com/father#michelle', 'http://example.com/father#heinz'} |
-| 3 | person ⊓ person         | OWLObjectIntersectionOf  | 1.0                | 1.0 | -0.002   | 0.002    | {'http://example.com/father#martin', 'http://example.com/father#stefan', 'http://example.com/father#markus', 'http://example.com/father#anna', 'http://example.com/father#michelle', 'http://example.com/father#heinz'} | {'http://example.com/father#martin', 'http://example.com/father#stefan', 'http://example.com/father#markus', 'http://example.com/father#anna', 'http://example.com/father#michelle', 'http://example.com/father#heinz'} |
-| 4 | person ⊔ person         | OWLObjectUnionOf         | 1.0                | 1.0 | -0.002  | 0.002   | {'http://example.com/father#martin', 'http://example.com/father#stefan', 'http://example.com/father#markus', 'http://example.com/father#anna', 'http://example.com/father#michelle', 'http://example.com/father#heinz'} | {'http://example.com/father#martin', 'http://example.com/father#stefan', 'http://example.com/father#anna', 'http://example.com/father#markus', 'http://example.com/father#michelle', 'http://example.com/father#heinz'} |
+| 1 | ∃ hasChild.female       | OWLObjectSomeValuesFrom   | 1.0                | 1.0 | -0.001 | 0.001  | {'markus'}                                                                                                                             | {'markus'}                                                                                                                             |
+| 2 | person ⊔ (¬person)      | OWLObjectUnionOf         | 1.0                | 1.0 | -0.003  | 0.003   | {'martin', 'stefan', 'markus', 'anna', 'michelle', 'heinz'} | {'martin', 'stefan', 'markus', 'anna', 'michelle', 'heinz'} |
+| 3 | person ⊓ person         | OWLObjectIntersectionOf  | 1.0                | 1.0 | -0.002   | 0.002    | {'martin', 'stefan', 'markus', 'anna', 'michelle', 'heinz'} | {'martin', 'stefan', 'markus', 'anna', 'michelle', 'heinz'} |
+| 4 | person ⊔ person         | OWLObjectUnionOf         | 1.0                | 1.0 | -0.002  | 0.002   | {'martin', 'stefan', 'markus', 'anna', 'michelle', 'heinz'} | {'martin', 'stefan', 'anna', 'markus', 'michelle', 'heinz'} |
 
 ---
 
@@ -44,7 +44,7 @@ This project focuses on leveraging **embeddings** to optimize instance retrieval
 I have developed two main knowledge graph embedding models, both accepted at academic venues. These models laid the foundation for advanced ontology representation learning.
 
 #### 1. **Embedding-in-Function-Spaces**  
-![fspace_logo](photos/LFMult1.pdf)
+![fspace_logo](Louis-Mozart.github.io/photos/LFMult1.pdf)
 
 This work explores the idea of representing embeddings in **function spaces** rather than traditional vector spaces. We present novel embedding methods that operate in function spaces rather than traditional finite vector spaces, enabling greater expressiveness and flexibility. Starting with polynomial functions and advancing to neural networks, the approach supports operations like composition, derivatives, and primitives of entity representations. Benefits include:  
 - Improved reasoning capabilities.  
@@ -54,7 +54,7 @@ For more details: [Embedding-in-Function-Spaces](https://dl.acm.org/doi/10.1145/
 
 
 #### 2. **Clifford Embeddings**  
-![cliff_logo](photos/funcspace.png)
+![cliff_logo](Louis-Mozart.github.io/photos/funcspace.png)
 
 This work introduces degenerate [Clifford algebras](https://en.wikipedia.org/wiki/Clifford_algebra), a generalization that incorporates nilpotent base vectors to unify translations and rotations in knowledge graph embeddings. By developing both greedy search and neural network-based methods to optimize algebra parameters, the approach achieves state-of-the-art performance on seven benchmark datasets, particularly excelling in generalization and mean reciprocal rank. This demonstrates the potential of [dual numbers](https://en.wikipedia.org/wiki/Dual_number) in enhancing embedding quality and broadening the applicability of Clifford algebras.
 
