@@ -17,9 +17,9 @@ To see all my publications, please refer to my [My google scholar profile](https
 
 #### 1. **Implementation of Caching Mechanisms for Fast Instance Retrieval**  
 Efficient instance retrieval is vital for ontology-based reasoning systems. My approach introduces a **semantics-aware caching strategy** to accelerate concept learning:  
-- The cache $$\mathcal{A}$$ functions as a **subsumption-aware map**, linking concepts to a set of instances.  
-- Given a concept $$C$$, $$\mathcal{A}$$ identifies the most specific concept $$D$$ in its storage such that $$C \sqsubseteq D$$ (where $$D$$ subsumes $$C$$).  
-- This approach minimizes redundant evaluations by testing $C$ only against the instances of $$D$$.  
+- The cache $$ \mathcal{A} $$ functions as a **subsumption-aware map**, linking concepts to a set of instances.  
+- Given a concept $$ C $$, $$ \mathcal{A} $$ identifies the most specific concept $$ D $$ in its storage such that $$ C \sqsubseteq D $$ (where $$ D $$ subsumes $$ C $$).  
+- This approach minimizes redundant evaluations by testing $$ C $$ only against the instances of $$ D $$.  
 
 #### 2. **Instance Retrieval with Embedding-Based Reasoners on incomplete Knowledge bases**  
 This project focuses on leveraging **embeddings** to optimize instance retrieval in OWL ontologies. Key aspects include:  
